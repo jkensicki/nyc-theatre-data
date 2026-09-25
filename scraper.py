@@ -10,25 +10,23 @@ def clean_slug(text):
 def fetch_nyc_shows():
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+        "Accept": "text/html,application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
     }
     shows = []
     seen = set()
 
     def add_show(title, theatre, category, show_type="Play", runtime="Approx. 2h", synopsis="", score="93%", status="Now Playing"):
         title = title.strip()
-        # Clean quotes and prefixes
         title = re.sub(r"^[\"']|[\"']$", "", title).strip()
         if not title or len(title) < 2 or len(title) > 60:
             return
         
-        # Deduplication key
         clean_key = re.sub(r"[^a-z0-9]", "", title.lower())
         if clean_key in seen:
             return
         seen.add(clean_key)
 
-        synopsis_text = synopsis if synopsis else f"{title} is running on the New York stage with critical consensus from major publications."
+        synopsis_text = synopsis if synopsis else f"{title} is currently running on the New York stage with critical consensus."
         
         shows.append({
             "id": clean_slug(title),
@@ -36,7 +34,7 @@ def fetch_nyc_shows():
             "category": category,
             "type": show_type,
             "status": status,
-            "theatre": theatre if theatre and theatre != "Broadway House" else ("Broadway Theatre" if category == "Broadway" else "Off-Broadway Theatre"),
+            "theatre": theatre if theatre else ("Broadway Theatre" if category == "Broadway" else "Off-Broadway Venue"),
             "address": "Midtown Manhattan" if category == "Broadway" else "Off-Broadway / Downtown NYC",
             "runtime": runtime,
             "score": score,
@@ -48,7 +46,7 @@ def fetch_nyc_shows():
             ]
         })
 
-    # --- 1. Broadway.org (All Active Broadway League Productions) ---
+    # --- 1. Broadway.org (All Broadway League Productions) ---
     try:
         url = "https://www.broadway.org/performance-times"
         r = requests.get(url, headers=headers, timeout=20)
@@ -61,49 +59,47 @@ def fetch_nyc_shows():
                     t = title_elem.text.strip()
                     rt = cols[1].text.strip()
                     if t and t != "Show" and not t.isdigit() and len(t) > 2:
-                        stype = "Musical" if any(w in t.lower() for w in ["musical", "gatsby", "lion", "wicked", "hadestown", "hamilton", "six", "ending", "mormon", "juliet", "mincemeat"]) else "Play"
+                        stype = "Musical" if any(w in t.lower() for w in ["musical", "gatsby", "lion", "wicked", "hadestown", "hamilton", "six", "ending", "mormon", "juliet", "mincemeat", "rocky"]) else "Play"
                         add_show(t, "Broadway Theatre", "Broadway", stype, rt if ("min" in rt or "h" in rt) else "Approx. 2h 30m", status="Now Playing")
     except Exception as e:
         print(f"Error scraping Broadway.org: {e}")
 
-    # --- 2. TheaterMania NYC Directory (Scrapes Broadway & Off-Broadway listings directly) ---
+    # --- 2. Lucille Lortel Foundation / Internet Off-Broadway Database (IOBDB) ---
+    # Public non-blocked directory of active Off-Broadway productions
     try:
-        for page in [1, 2, 3]:
-            tm_url = f"https://www.theatermania.com/shows/new-york-city-theater/?page={page}"
-            r = requests.get(tm_url, headers=headers, timeout=15)
-            if r.status_code == 200:
-                soup = BeautifulSoup(r.text, "html.parser")
-                # Look for production cards
-                cards = soup.select("article, .c-card, [data-testid='card'], .show-card")
-                for card in cards:
-                    title_node = card.select_one("h2, h3, .c-card__title, a[href*='/shows/']")
-                    venue_node = card.select_one(".c-card__venue, .venue, p")
-                    if title_node and title_node.text.strip():
-                        t = title_node.text.strip()
-                        v = venue_node.text.strip() if venue_node else "NYC Theatre"
-                        cat = "Broadway" if any(b in v.lower() for b in ["broadway", "st. james", "gershwin", "hirschfeld", "lyceum"]) else "Off-Broadway"
-                        stype = "Musical" if "musical" in t.lower() else "Play"
-                        add_show(t, v, cat, stype, "Approx. 2h")
-    except Exception as e:
-        print(f"Error scraping TheaterMania: {e}")
-
-    # --- 3. BroadwayWorld NYC Master Show List ---
-    try:
-        bww_urls = [
-            ("https://www.broadwayworld.com/shows/shows.php?showtype=BWAY", "Broadway"),
-            ("https://www.broadwayworld.com/shows/shows.php?showtype=OB", "Off-Broadway")
-        ]
-        for url, cat in bww_urls:
-            r = requests.get(url, headers=headers, timeout=15)
-            if r.status_code == 200:
-                soup = BeautifulSoup(r.text, "html.parser")
-                for link in soup.select("a[href*='shows.php?show=']"):
+        iobdb_url = "https://www.iobdb.com/CurrentProductions"
+        r = requests.get(iobdb_url, headers=headers, timeout=20)
+        if r.status_code == 200:
+            soup = BeautifulSoup(r.text, "html.parser")
+            for row in soup.select("table tr, .production-row, .row"):
+                link = row.select_one("a[href*='/Production/']")
+                if link and link.text.strip():
                     t = link.text.strip()
-                    if t and len(t) > 2 and not t.isdigit():
-                        stype = "Musical" if any(w in t.lower() for w in ["musical", "cabaret", "sing"]) else "Play"
-                        add_show(t, "NYC Theatre", cat, stype, "Approx. 2h")
+                    # Try to extract theater
+                    theatre_elem = row.select_one("a[href*='/Theatre/'], .theatre")
+                    theatre = theatre_elem.text.strip() if theatre_elem else "Off-Broadway Theatre"
+                    stype = "Musical" if "musical" in t.lower() else "Play"
+                    add_show(t, theatre, "Off-Broadway", stype, "Approx. 2h 00m", status="Now Playing")
     except Exception as e:
-        print(f"Error scraping BroadwayWorld directory: {e}")
+        print(f"Error scraping IOBDB: {e}")
+
+    # --- 3. Playbill's Public Syndicated Off-Broadway Roster ---
+    try:
+        # Pulls from Playbill's structured listing endpoint
+        pb_url = "https://playbill.com/shows?q=&venue_type=off-broadway"
+        r = requests.get(pb_url, headers=headers, timeout=15)
+        if r.status_code == 200:
+            soup = BeautifulSoup(r.text, "html.parser")
+            for card in soup.select(".bsp-shelf-item, .show-card, a[href*='/show/']"):
+                title_node = card.select_one(".bsp-shelf-title, h3, .title")
+                theatre_node = card.select_one(".bsp-shelf-subtitle, .venue")
+                if title_node and title_node.text.strip():
+                    t = title_node.text.strip()
+                    v = theatre_node.text.strip() if theatre_node else "Off-Broadway Theatre"
+                    stype = "Musical" if "musical" in t.lower() else "Play"
+                    add_show(t, v, "Off-Broadway", stype, "Approx. 2h 00m")
+    except Exception as e:
+        print(f"Error scraping Playbill listing: {e}")
 
     # Output to dist/shows.json
     os.makedirs("dist", exist_ok=True)
