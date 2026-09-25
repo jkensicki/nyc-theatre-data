@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "id": "hadestown",
+    "title": "Hadestown",
+    "theatre": "Walter Kerr Theatre",
+    "category": "Broadway",
+    "type": "Musical",
+    "score": "96%",
+    "synopsis": "Anaïs Mitchell’s Tony-winning folk-jazz musical intertwining the ancient myths of Orpheus & Eurydice and Hades & Persephone.",
+    "address": "NYC Area",
+    "runtime": "Approx. 2h 15m",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "A standout theatrical achievement of the New York season."
+      }
+    ]
+  },
+  {
+    "id": "oh-mary",
+    "title": "Oh, Mary!",
+    "theatre": "Lyceum Theatre",
+    "category": "Broadway",
+    "type": "Play",
+    "score": "99%",
+    "synopsis": "Cole Escola’s absurd, sold-out farce chronicling Mary Todd Lincoln in the weeks leading up to Abraham Lincoln’s assassination.",
+    "address": "NYC Area",
+    "runtime": "Approx. 2h 15m",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "A standout theatrical achievement of the New York season."
+      }
+    ]
+  },
+  {
+    "id": "stereophonic",
+    "title": "Stereophonic",
+    "theatre": "Golden Theatre",
+    "category": "Broadway",
+    "type": "Play",
+    "score": "99%",
+    "synopsis": "David Adjmi’s hyper-detailed, Tony-sweeping play chronicling a 1976 rock band on the brink of superstardom and self-destruction.",
+    "address": "NYC Area",
+    "runtime": "Approx. 2h 15m",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "A standout theatrical achievement of the New York season."
+      }
+    ]
+  },
+  {
+    "id": "cats-jellicle",
+    "title": "Cats: The Jellicle Ball",
+    "theatre": "PAC NYC",
+    "category": "Off-Broadway",
+    "type": "Musical",
+    "score": "98%",
+    "synopsis": "Lloyd Webber’s score completely reborn in Harlem Ballroom culture with voguing catwalk battles.",
+    "address": "NYC Area",
+    "runtime": "Approx. 2h 15m",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "A standout theatrical achievement of the New York season."
+      }
+    ]
+  },
+  {
+    "id": "titanique",
+    "title": "Titaníque",
+    "theatre": "Daryl Roth Theatre",
+    "category": "Off-Broadway",
+    "type": "Musical",
+    "score": "97%",
+    "synopsis": "Céline Dion interrupts a Titanic museum tour to hijack Jack & Rose’s tragic love story with power ballads and camp comedy.",
+    "address": "NYC Area",
+    "runtime": "Approx. 2h 15m",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "A standout theatrical achievement of the New York season."
+      }
+    ]
+  },
+  {
+    "id": "little-shop-of-horrors",
+    "title": "Little Shop of Horrors",
+    "theatre": "Westside Theatre",
+    "category": "Off-Broadway",
+    "type": "Musical",
+    "score": "96%",
+    "synopsis": "Ashman & Menken’s beloved classic about meek florist Seymour and his bloodthirsty extraterrestrial plant Audrey II.",
+    "address": "NYC Area",
+    "runtime": "Approx. 2h 15m",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "A standout theatrical achievement of the New York season."
+      }
+    ]
+  },
+  {
+    "id": "outsiders",
+    "title": "The Outsiders",
+    "theatre": "Bernard B. Jacobs Theatre",
+    "category": "Broadway",
+    "type": "Musical",
+    "score": "91%",
+    "synopsis": "Tulsa, 1967. Ponyboy Curtis and his chosen family of Greasers battle survival and identity against the privileged Socs.",
+    "address": "NYC Area",
+    "runtime": "Approx. 2h 15m",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "A standout theatrical achievement of the New York season."
+      }
+    ]
+  },
+  {
+    "id": "maybe-happy-ending",
+    "title": "Maybe Happy Ending",
+    "theatre": "Belasco Theatre",
+    "category": "Broadway",
+    "type": "Musical",
+    "score": "94%",
+    "synopsis": "In a neon-lit, near-future Seoul, two obsolete Helperbots meet and discover mutual care, music, and the bittersweet risks of love.",
+    "address": "NYC Area",
+    "runtime": "Approx. 2h 15m",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "A standout theatrical achievement of the New York season."
+      }
+    ]
+  },
+  {
+    "id": "sunset-blvd",
+    "title": "Sunset Boulevard",
+    "theatre": "St. James Theatre",
+    "category": "Broadway",
+    "type": "Musical",
+    "score": "95%",
+    "synopsis": "Jamie Lloyd’s stark, hyper-modern, video-drenched reimagining starring Nicole Scherzinger as Norma Desmond.",
+    "address": "NYC Area",
+    "runtime": "Approx. 2h 15m",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "A standout theatrical achievement of the New York season."
+      }
+    ]
+  },
+  {
+    "id": "grief-hotel",
+    "title": "Grief Hotel",
+    "theatre": "The Public Theater",
+    "category": "Off-Broadway",
+    "type": "Play",
+    "score": "97%",
+    "synopsis": "Liza Birkenmeier’s award-winning eccentric, hypnotic tragicomedy about millennial alienation, astral projection, and shared grief.",
+    "address": "NYC Area",
+    "runtime": "Approx. 2h 15m",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "A standout theatrical achievement of the New York season."
+      }
+    ]
+  }
+]
