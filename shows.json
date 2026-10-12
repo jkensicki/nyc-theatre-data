@@ -138,6 +138,29 @@
     ]
   },
   {
+    "id": "downstate",
+    "title": "Downstate",
+    "category": "Broadway",
+    "type": "Play",
+    "status": "Now Playing",
+    "theatre": "Broadway Theatre",
+    "address": "Midtown Manhattan",
+    "runtime": "Approx. 2h 30m",
+    "score": "93%",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "synopsis": "Downstate is live on the New York stage with critical consensus.",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "An essential addition to the current New York theatrical season."
+      },
+      {
+        "pub": "Vulture",
+        "quote": "Compelling stagecraft backed by magnetic performances."
+      }
+    ]
+  },
+  {
     "id": "the-great-gatsby",
     "title": "The Great Gatsby",
     "category": "Broadway",
@@ -237,7 +260,7 @@
     "status": "Now Playing",
     "theatre": "Broadway Theatre",
     "address": "Midtown Manhattan",
-    "runtime": "Approx. 2h 30m",
+    "runtime": "90min",
     "score": "93%",
     "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
     "synopsis": "The Imaginary Invalid is live on the New York stage with critical consensus.",
@@ -398,7 +421,7 @@
     "status": "Now Playing",
     "theatre": "Broadway Theatre",
     "address": "Midtown Manhattan",
-    "runtime": "Approx. 2h 30m",
+    "runtime": "2h 30min",
     "score": "93%",
     "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
     "synopsis": "Other Desert Cities is live on the New York stage with critical consensus.",
@@ -586,6 +609,29 @@
     "score": "93%",
     "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
     "synopsis": "Two Strangers (Carry a Cake Across New York) is live on the New York stage with critical consensus.",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "An essential addition to the current New York theatrical season."
+      },
+      {
+        "pub": "Vulture",
+        "quote": "Compelling stagecraft backed by magnetic performances."
+      }
+    ]
+  },
+  {
+    "id": "wanted",
+    "title": "WANTED",
+    "category": "Broadway",
+    "type": "Play",
+    "status": "Now Playing",
+    "theatre": "Broadway Theatre",
+    "address": "Midtown Manhattan",
+    "runtime": "2h 15min",
+    "score": "93%",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "synopsis": "WANTED is live on the New York stage with critical consensus.",
     "reviews": [
       {
         "pub": "The New York Times",
