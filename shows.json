@@ -161,6 +161,29 @@
     ]
   },
   {
+    "id": "the-fantasticks",
+    "title": "The Fantasticks",
+    "category": "Broadway",
+    "type": "Play",
+    "status": "Now Playing",
+    "theatre": "Broadway Theatre",
+    "address": "Midtown Manhattan",
+    "runtime": "Approx. 2h 30m",
+    "score": "93%",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "synopsis": "The Fantasticks is live on the New York stage with critical consensus.",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "An essential addition to the current New York theatrical season."
+      },
+      {
+        "pub": "Vulture",
+        "quote": "Compelling stagecraft backed by magnetic performances."
+      }
+    ]
+  },
+  {
     "id": "the-great-gatsby",
     "title": "The Great Gatsby",
     "category": "Broadway",
