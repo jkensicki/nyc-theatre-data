@@ -391,6 +391,29 @@
     ]
   },
   {
+    "id": "much-ado-about-nothing",
+    "title": "Much Ado About Nothing",
+    "category": "Broadway",
+    "type": "Play",
+    "status": "Now Playing",
+    "theatre": "Broadway Theatre",
+    "address": "Midtown Manhattan",
+    "runtime": "2h 20min",
+    "score": "93%",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "synopsis": "Much Ado About Nothing is live on the New York stage with critical consensus.",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "An essential addition to the current New York theatrical season."
+      },
+      {
+        "pub": "Vulture",
+        "quote": "Compelling stagecraft backed by magnetic performances."
+      }
+    ]
+  },
+  {
     "id": "oh-mary",
     "title": "Oh, Mary!",
     "category": "Broadway",
