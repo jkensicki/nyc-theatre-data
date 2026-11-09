@@ -69,6 +69,29 @@
     ]
   },
   {
+    "id": "blue-man-group-a-new-holiday-surprise",
+    "title": "Blue Man Group \"A New Holiday Surprise",
+    "category": "Broadway",
+    "type": "Play",
+    "status": "Now Playing",
+    "theatre": "Broadway Theatre",
+    "address": "Midtown Manhattan",
+    "runtime": "90min",
+    "score": "93%",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "synopsis": "Blue Man Group \"A New Holiday Surprise is live on the New York stage with critical consensus.",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "An essential addition to the current New York theatrical season."
+      },
+      {
+        "pub": "Vulture",
+        "quote": "Compelling stagecraft backed by magnetic performances."
+      }
+    ]
+  },
+  {
     "id": "the-book-of-mormon",
     "title": "The Book of Mormon",
     "category": "Broadway",
@@ -184,6 +207,29 @@
     ]
   },
   {
+    "id": "galileo",
+    "title": "Galileo",
+    "category": "Broadway",
+    "type": "Play",
+    "status": "Now Playing",
+    "theatre": "Broadway Theatre",
+    "address": "Midtown Manhattan",
+    "runtime": "Approx. 2h 30m",
+    "score": "93%",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "synopsis": "Galileo is live on the New York stage with critical consensus.",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "An essential addition to the current New York theatrical season."
+      },
+      {
+        "pub": "Vulture",
+        "quote": "Compelling stagecraft backed by magnetic performances."
+      }
+    ]
+  },
+  {
     "id": "the-great-gatsby",
     "title": "The Great Gatsby",
     "category": "Broadway",
@@ -276,6 +322,29 @@
     ]
   },
   {
+    "id": "here-there-are-blueberries",
+    "title": "Here There Are Blueberries",
+    "category": "Broadway",
+    "type": "Play",
+    "status": "Now Playing",
+    "theatre": "Broadway Theatre",
+    "address": "Midtown Manhattan",
+    "runtime": "90min",
+    "score": "93%",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "synopsis": "Here There Are Blueberries is live on the New York stage with critical consensus.",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "An essential addition to the current New York theatrical season."
+      },
+      {
+        "pub": "Vulture",
+        "quote": "Compelling stagecraft backed by magnetic performances."
+      }
+    ]
+  },
+  {
     "id": "the-imaginary-invalid",
     "title": "The Imaginary Invalid",
     "category": "Broadway",
@@ -287,6 +356,52 @@
     "score": "93%",
     "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
     "synopsis": "The Imaginary Invalid is live on the New York stage with critical consensus.",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "An essential addition to the current New York theatrical season."
+      },
+      {
+        "pub": "Vulture",
+        "quote": "Compelling stagecraft backed by magnetic performances."
+      }
+    ]
+  },
+  {
+    "id": "inter-alia",
+    "title": "Inter Alia",
+    "category": "Broadway",
+    "type": "Play",
+    "status": "Now Playing",
+    "theatre": "Broadway Theatre",
+    "address": "Midtown Manhattan",
+    "runtime": "1h 45min",
+    "score": "93%",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "synopsis": "Inter Alia is live on the New York stage with critical consensus.",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "An essential addition to the current New York theatrical season."
+      },
+      {
+        "pub": "Vulture",
+        "quote": "Compelling stagecraft backed by magnetic performances."
+      }
+    ]
+  },
+  {
+    "id": "it-s-a-wonderful-life-a-live-radio-play",
+    "title": "It's A Wonderful Life: A Live Radio Play",
+    "category": "Broadway",
+    "type": "Play",
+    "status": "Now Playing",
+    "theatre": "Broadway Theatre",
+    "address": "Midtown Manhattan",
+    "runtime": "90min",
+    "score": "93%",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "synopsis": "It's A Wonderful Life: A Live Radio Play is live on the New York stage with critical consensus.",
     "reviews": [
       {
         "pub": "The New York Times",
@@ -402,6 +517,29 @@
     "score": "93%",
     "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
     "synopsis": "Much Ado About Nothing is live on the New York stage with critical consensus.",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "An essential addition to the current New York theatrical season."
+      },
+      {
+        "pub": "Vulture",
+        "quote": "Compelling stagecraft backed by magnetic performances."
+      }
+    ]
+  },
+  {
+    "id": "now-you-see-me-live",
+    "title": "Now You See Me Live",
+    "category": "Broadway",
+    "type": "Play",
+    "status": "Now Playing",
+    "theatre": "Broadway Theatre",
+    "address": "Midtown Manhattan",
+    "runtime": "Approx. 2h 30m",
+    "score": "93%",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "synopsis": "Now You See Me Live is live on the New York stage with critical consensus.",
     "reviews": [
       {
         "pub": "The New York Times",
@@ -563,6 +701,29 @@
     "score": "93%",
     "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
     "synopsis": "Schmigadoon! is live on the New York stage with critical consensus.",
+    "reviews": [
+      {
+        "pub": "The New York Times",
+        "quote": "An essential addition to the current New York theatrical season."
+      },
+      {
+        "pub": "Vulture",
+        "quote": "Compelling stagecraft backed by magnetic performances."
+      }
+    ]
+  },
+  {
+    "id": "school-girls-or-the-african-mean-girls-play",
+    "title": "School Girls; Or, The African Mean Girls Play",
+    "category": "Broadway",
+    "type": "Play",
+    "status": "Now Playing",
+    "theatre": "Broadway Theatre",
+    "address": "Midtown Manhattan",
+    "runtime": "80min",
+    "score": "93%",
+    "poster": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+    "synopsis": "School Girls; Or, The African Mean Girls Play is live on the New York stage with critical consensus.",
     "reviews": [
       {
         "pub": "The New York Times",
